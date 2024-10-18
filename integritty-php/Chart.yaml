@@ -1,0 +1,5 @@
+apiVersion: v2
+name: integritty-php
+description: Integritty PHP Application
+type: application
+version: 0.0.0

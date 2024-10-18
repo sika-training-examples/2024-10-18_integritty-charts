@@ -1,0 +1,6 @@
+# Required
+image:
+
+# Optional
+replicas: 2
+ingressClassName: nginx
