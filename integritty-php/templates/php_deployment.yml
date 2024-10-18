@@ -16,6 +16,7 @@ spec:
       containers:
         - name: main
           image: {{ required ".Values.image is required" .Values.image }}
+          imagePullPolicy: Always
           ports:
             - name: http
               containerPort: 80
