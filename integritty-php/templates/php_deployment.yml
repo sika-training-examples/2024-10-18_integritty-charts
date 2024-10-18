@@ -13,6 +13,10 @@ spec:
       labels:
         app:  {{ .Release.Name }}-php
     spec:
+      {{ if .Values.imagePullSecret }}
+      imagePullSecrets:
+        - name: {{ .Values.imagePullSecret }}
+      {{ end }}
       containers:
         - name: main
           image: {{ required ".Values.image is required" .Values.image }}
